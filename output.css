@@ -31,16 +31,13 @@
     --default-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
-    --color-font: #4B88FA;
     --color-Effect: #4b88fab3;
     --color-Principal: #4B88FA;
     --color-Secundario: #A8C7FF;
-    --color-Shadow: #71717B;
     --color-background: #f2f2f2;
     --color-EffectDark: #4BFA4Bb3;
     --color-PrincipalDark: #4BFA4B;
     --color-SecundarioDark: #3AA32C;
-    --color-ShadowDark: #BEBECF;
     --color-backgroundDark: #202020;
   }
 }
@@ -229,9 +226,6 @@
   .table {
     display: table;
   }
-  .h-12 {
-    height: calc(var(--spacing) * 12);
-  }
   .h-14 {
     height: calc(var(--spacing) * 14);
   }
@@ -276,9 +270,6 @@
   }
   .w-2\/3 {
     width: calc(2/3 * 100%);
-  }
-  .w-12 {
-    width: calc(var(--spacing) * 12);
   }
   .w-14 {
     width: calc(var(--spacing) * 14);
@@ -492,10 +483,6 @@
   .font-extralight {
     --tw-font-weight: var(--font-weight-extralight);
     font-weight: var(--font-weight-extralight);
-  }
-  .font-light {
-    --tw-font-weight: var(--font-weight-light);
-    font-weight: var(--font-weight-light);
   }
   .text-nowrap {
     text-wrap: nowrap;
