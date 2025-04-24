@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+
+@theme{
+    --color-font: #4B88FA;
+    --color-Effect: #4b88fab3;
+
+    --color-Principal: #4B88FA;
+    --color-Secundario: #A8C7FF;
+    --color-Shadow: #71717B;
+    --color-background: #f2f2f2;
+    --color-EffectDark: #4BFA4Bb3;
+    --color-PrincipalDark: #4BFA4B;
+    --color-SecundarioDark: #3AA32C;
+    --color-ShadowDark: #BEBECF;
+    --color-backgroundDark: #202020;
+}
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+
+.nav-bar{
+    @apply font-light text-xl cursor-pointer;
+}
+
+.icon {
+    @apply h-12 w-12 mx-4;
+    object-fit: contain;
+}
+
+.blob {
+    position: absolute;
+    filter: blur(30px);
+    border-radius: 50%;
+    animation: blobMove 6s ease-in-out infinite;
+    z-index: 0;
+}
+
+@keyframes blobMove {
+    0% {
+        transform: translate(0px, 0px) scale(1);
+        border-radius: 40% 40% 60% 60% / 40% 60% 60% 40%;
+    }
+    25% {
+        transform: translate(30px, -30px) scale(1.1);
+        border-radius: 50% 60% 60% 50% / 50% 40% 60% 50%;
+    }
+    50% {
+        transform: translate(60px, 0px) scale(1.05);
+        border-radius: 60% 50% 50% 60% / 60% 50% 50% 60%;
+    }
+    75% {
+        transform: translate(30px, 30px) scale(1.1);
+        border-radius: 60% 60% 40% 40% / 40% 50% 60% 50%;
+    }
+    100% {
+        transform: translate(0px, 0px) scale(1);
+        border-radius: 40% 40% 60% 60% / 40% 60% 60% 40%;
+    }
+}

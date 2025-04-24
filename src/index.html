@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br" data-theme="dark" id="html" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./output.css">
+    <script src="/src/index.js"></script>
+    <title>Portfolio Fabio Nogueira</title>
+</head>
+<body class="bg-background dark:bg-backgroundDark">
+    <header class="p-6 mb-14 z-10 text-Principal dark:text-PrincipalDark">
+        <div class="flex items-center justify-between md:justify-end px-4 gap-4 text-sm md:text-base">
+        
+        <!-- Botões de tema -->
+        <div class="flex items-center gap-2">
+            <button type="button" class="dark:hidden cursor-pointer" onclick="toggleTheme()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#4B88FA">
+                <path d="M480-120q-150 0-255-105T120-480q0-150 105-255t255-105q14 0 27.5 1t26.5 3q-41 29-65.5 75.5T444-660q0 90 63 153t153 63q55 0 101-24.5t75-65.5q2 13 3 26.5t1 27.5q0 150-105 255T480-120Zm0-80q88 0 158-48.5T740-375q-20 5-40 8t-40 3q-123 0-209.5-86.5T364-660q0-20 3-40t8-40q-78 32-126.5 102T200-480q0 116 82 198t198 82Z"/>
+            </svg>
+            </button>
+    
+            <button type="button" class="hidden dark:block cursor-pointer" onclick="toggleTheme()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#4BFA4B">
+                <path d="M492-280q83 0 141.5-58.5T692-480q0-83-58.5-141.5T492-680q-22 0-43 4.5T408-662q54 25 85.5 74T525-480q0 59-31.5 108T408-298q20 9 41 13.5t43 4.5ZM480-28 346-160H160v-186L28-480l132-134v-186h186l134-132 134 132h186v186l132 134-132 134v186H614L480-28Zm0-112 100-100h140v-140l100-100-100-100v-140H580L480-820 380-720H240v140L140-480l100 100v140h140l100 100Z"/>
+            </svg>
+            </button>
+        </div>
+        <!-- Navegação -->
+        <nav class="flex gap-4 justify-center items-center pr-4">
+            <a href="#sobre" class="nav-bar">Sobre</a>
+            <a href="#tecnologia" class="nav-bar">Tecnologias</a>
+            <a href="#projetos" class="nav-bar">Projetos</a>
+            <a href="#contato" class="nav-bar">Contato</a>
+        </nav>
+        </div>
+    </header>
+
+
+    <main class="pt-14 flex flex-col items-center justify-center z-10">
+            <div class="flex items-center gap-6">
+                <section class="w-2/3 flex flex-col items-end text-end justify-end mr-3">
+                    <p class="font-bold text-Principal dark:text-PrincipalDark text-base md:text-3xl text-nowrap">Fabio Nogueira Asseiro</p>
+                    <p class="font-extralight italic text-Principal dark:text-PrincipalDark text-fontdark text-sm md:text-xl">Dev Front-end</p>
+                </section>
+                
+                <div class="w-1/2">
+                <section class="flex items-center justify-start relative">
+                    <div class="blob bg-Effect dark:bg-EffectDark w-28 h-28 md:w-48 md:h-48"></div>
+                    <div class="bg-linear-120 from-Principal dark:from-PrincipalDark to-Secundario dark:to-SecundarioDark w-40 h-40 md:w-60 md:h-60 z-10 rounded-full relative overflow-hidden">
+                        <img src="/src/img/fotoPerfil.png" alt="" class="rounded-full w-full h-full object-cover">
+                    </div>
+                </section>
+                </div>
+            </div>
+            <div class="w-full flex align-middle items-center justify-between pt-14" id="sobre">
+                <div class="min-w-1/7 md:min-w-1/5"></div>
+                <div class="w-max">
+                    <h2 class="font-bold text-Principal dark:text-PrincipalDark text-3xl md:text-2xl text-center pb-3">Sobre Mim</h2>
+                    <p class="text-justify dark:text-white">Olá! Me chamo Fabio Nogueira Asseiro, tenho 20 anos e sou desenvolvedor front-end. Sempre fui apaixonado por design e por criar coisas novas, foi assim que encontrei no desenvolvimento front-end o equilíbrio ideal entre criatividade e tecnologia.
+                        Tenho experiência com Kotlin e JavaScript, que foram as principais tecnologias utilizadas nos projetos dos quais participei. Gosto de transformar ideias em interfaces bonitas, funcionais e intuitivas, oferecendo experiências de uso agradáveis para os usuários.
+                        Atualmente, estou me dedicando a me aperfeiçoar ainda mais em desenvolvimento front-end, design de interfaces (UI) e experiência do usuário (UX), buscando evoluir constantemente e entregar soluções cada vez melhores.</p>
+                </div>
+                <div class="min-w-1/7 md:min-w-1/5"></div>
+            </div>
+
+            <div class="w-full flex items-center justify-center pt-14" id="tecnologia">
+                <div class="min-w-1/7 md:min-w-1/4"></div>
+                <div class="w-full flex flex-col items-center justify-center">
+                    <h2 class="font-bold text-Principal dark:text-PrincipalDark text-2xl text-center pb-10">Tecnologias utilizadas com frequência</h2>
+                    <div class="flex md:flex-row flex-col justify-between items-center md:items-baseline">
+                        <!-- Card 1 - Kotlin -->
+                        <div class="h-56 md:w-1/3 m-2 flex flex-col items-center justify-center">
+                            <section class="h-56 flex flex-col items-center justify-center bg-gray-300 dark:bg-gray-600 dark:text-white m-4 p-4 rounded-2xl hover:shadow-zinc-500 shadow-lg transition-all duration-500 ease-in-out">
+                                <div class="h-20 w-20 flex items-center justify-center mb-4 p-2 rounded-2xl ">
+                                    <img class="h-14 w-14 object-contain" src="/src/img/kotlinIcon.png" alt="">
+                                </div>
+                                <p class="text-center">Kotlin foi utilizado quando eu realizei o app para o Play Store da empresa que trabalho</p>
+                            </section>
+                        </div>
+            
+                        <!-- Card 2 - JavaScript -->
+                        <div class="h-56 md:w-1/3 m-2 flex flex-col items-center justify-center">
+                            <section class="h-56 flex flex-col items-center justify-center bg-gray-300 dark:bg-gray-600 dark:text-white m-4 p-4 rounded-2xl hover:shadow-zinc-500 shadow-lg transition-all duration-500 ease-in-out">
+                                <div class="h-20 w-20 flex items-center justify-center mb-4 p-2 rounded-2xl  ">
+                                    <img class="h-14 w-14 object-contain" src="/src/img/jsIcon.png" alt="">
+                                </div>
+                                <p class="text-center">JavaScript foi utilizado para fazer os scripts do site da empresa que trabalho</p>
+                            </section>
+                        </div>
+            
+                        <!-- Card 3 - Tailwind -->
+                        <div class="h-56 md:w-1/3 m-2 flex flex-col items-center justify-center">
+                            <section class="h-56 flex flex-col items-center justify-center bg-gray-300 dark:bg-gray-600 dark:text-white m-4 p-4 rounded-2xl hover:shadow-zinc-500 shadow-lg transition-all duration-500 ease-in-out">
+                                <div class="h-20 w-20 flex items-center justify-center mb-4 p-2 rounded-2xl  ">
+                                    <img class="h-14 w-14 object-contain" src="/src/img/tailwindIcon.png" alt="">
+                                </div>
+                                <p class="text-center">Tailwind CSS foi utilizado para fazer o estilo do site da empresa e este site também</p>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-w-1/7 md:min-w-1/4"></div>
+            </div>
+
+            <div class="w-full flex items-center justify-center pt-14" id="projetos">
+                <div class="min-w-1/7 md:min-w-1/4"></div>
+                <div class="w-full flex flex-col items-center justify-center">
+                    <h2 class="font-bold text-Principal dark:text-PrincipalDark text-2xl text-center pb-10">Projetos Profissionais</h2>
+                    <div class="flex flex-col md:flex-row justify-between items-baseline">
+                        <!-- Card 1 - Kotlin -->
+                        <div class="md:w-1/3 m-2 flex flex-col items-center justify-center">
+                                <a href="https://play.google.com/store/apps/details?id=com.appgizzo&hl=pt_BR" target="_blank" rel="noopener noreferrer">
+                                    <section class="h-96 flex flex-col items-center justify-center bg-gray-300 dark:bg-gray-600 dark:text-white m-4 p-4 rounded-2xl hover:shadow-zinc-500 shadow-lg transition-all duration-500 ease-in-out gap-4">
+                                        <img src="/src/img/projetos/gizzoPlayStore.jpg" alt="Site da empresa gizzo que participei da criação" class="h-52 object-contain hover:shadow-md hover:shadow-zinc-500 transition-all duration-500 ease-in-out rounded-2xl" srcset="">
+                                        <p class="text-center">Aplicativo publicado na Play Store para gerenciamento financeiro dos clientes da empresa Gizzo. <br>
+                                            Desenvolvido com Kotlin e Jetpack Compose.</p>
+                                    </section>
+                                </a>
+                        </div>
+            
+                        <!-- Card 2 - JavaScript -->
+                        <div class="md:w-1/3 m-2 flex flex-col items-center justify-center cursor-pointer">
+                            <a href="https://gizzo.com.br" target="_blank" rel="noopener noreferrer">
+                                <section class="h-96 flex flex-col items-center justify-center bg-gray-300 dark:bg-gray-600 dark:text-white m-4 p-4 rounded-2xl hover:shadow-zinc-500 shadow-lg transition-all duration-500 ease-in-out gap-4">
+                                    <img src="/src/img/projetos/gizzoWebSite.jpg" alt="Site da empresa gizzo que participei da criação" class="h-52 object-contain hover:shadow-md hover:shadow-zinc-500 transition-all duration-500 ease-in-out rounded-2xl" srcset="">
+                                    <p class="text-center">Site institucional da empresa Gizzo, desenvolvido para apresentar seus serviços. <br> <br> Tecnologias utilizadas: HTML, CSS e JavaScript.</p>
+                                </section>
+                            </a>
+                        </div>
+            
+                        <!-- Card 3 - Tailwind -->
+                        <div class="md:w-1/3 m-2 flex flex-col items-center justify-center cursor-pointer">
+                            <a href="https://apps.apple.com/br/app/gizzo-planejamento-financeiro/id6504532366" target="_blank" rel="noopener noreferrer">
+                                <section class="h-96 flex flex-col items-center justify-center bg-gray-300 dark:bg-gray-600 dark:text-white m-4 p-4 rounded-2xl hover:shadow-zinc-500 shadow-lg transition-all duration-500 ease-in-out gap-4">
+                                    <img src="/src/img/projetos/gizzoAppStore.jpg" alt="Site da empresa gizzo que participei da criação" class="h-52 object-contain hover:shadow-md hover:shadow-zinc-500 transition-all duration-500 ease-in-out rounded-2xl" srcset="">
+                                    <p class="text-center">Aplicativo publicado na App Store com foco em planejamento financeiro dos clientes da empresa Gizzo. <br>
+                                        Desenvolvido com Swift e SwiftUI.</p>
+                                </section>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="min-w-1/7 md:min-w-1/4"></div>
+            </div>
+    </main>
+    <footer class="relative bottom-0 h-72 w-full bg-Principal dark:bg-PrincipalDark mt-20 text-white" id="contato">
+    <p class="text-center font-bold text-xl pt-4">
+        Para mais informações 
+    </p>
+    <div class="m-5">
+        <div class="flex flex-col">
+            <a href="https://www.instagram.com/nogueira01__/" target="_blank" class="flex items-center space-x-2 text-xl pb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M16,3c-7.16752,0 -13,5.83248 -13,13v18c0,7.16752 5.83248,13 13,13h18c7.16752,0 13,-5.83248 13,-13v-18c0,-7.16752 -5.83248,-13 -13,-13zM16,5h18c6.08648,0 11,4.91352 11,11v18c0,6.08648 -4.91352,11 -11,11h-18c-6.08648,0 -11,-4.91352 -11,-11v-18c0,-6.08648 4.91352,-11 11,-11zM37,11c-1.10457,0 -2,0.89543 -2,2c0,1.10457 0.89543,2 2,2c1.10457,0 2,-0.89543 2,-2c0,-1.10457 -0.89543,-2 -2,-2zM25,14c-6.06329,0 -11,4.93671 -11,11c0,6.06329 4.93671,11 11,11c6.06329,0 11,-4.93671 11,-11c0,-6.06329 -4.93671,-11 -11,-11zM25,16c4.98241,0 9,4.01759 9,9c0,4.98241 -4.01759,9 -9,9c-4.98241,0 -9,-4.01759 -9,-9c0,-4.98241 4.01759,-9 9,-9z"></path></g></g>
+                </svg>
+                <p>
+                    @nogueira01__
+                </p>
+            </a>
+        </div>
+        <div class="flex items-center gap-2">
+            <a href="https://www.linkedin.com/in/fabioasseiro/" target="_blank" class="flex items-center space-x-2 text-xl pb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path d="M24,4h-18c-1.105,0 -2,0.895 -2,2v18c0,1.105 0.895,2 2,2h18c1.105,0 2,-0.895 2,-2v-18c0,-1.105 -0.895,-2 -2,-2zM10.954,22h-2.95v-9.492h2.95zM9.449,11.151c-0.951,0 -1.72,-0.771 -1.72,-1.72c0,-0.949 0.77,-1.719 1.72,-1.719c0.948,0 1.719,0.771 1.719,1.719c0,0.949 -0.771,1.72 -1.719,1.72zM22.004,22h-2.948v-4.616c0,-1.101 -0.02,-2.517 -1.533,-2.517c-1.535,0 -1.771,1.199 -1.771,2.437v4.696h-2.948v-9.492h2.83v1.297h0.04c0.394,-0.746 1.356,-1.533 2.791,-1.533c2.987,0 3.539,1.966 3.539,4.522z"></path></g></g>
+                </svg>
+                <p>
+                    Fabio Nogueira Asseiro
+                </p>
+            </a>
+        </div>
+        <div class="flex items-center gap-2">
+            <a href="https://github.com/FabioAsseiro" target="_blank" class="flex items-center space-x-2 text-xl pb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="50" height="50" viewBox="0,0,256,256">
+                    <g fill="#ffffff" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(5.12,5.12)"><path d="M17.791,46.836c0.711,-0.306 1.209,-1.013 1.209,-1.836v-5.4c0,-0.197 0.016,-0.402 0.041,-0.61c-0.014,0.004 -0.027,0.007 -0.041,0.01c0,0 -3,0 -3.6,0c-1.5,0 -2.8,-0.6 -3.4,-1.8c-0.7,-1.3 -1,-3.5 -2.8,-4.7c-0.3,-0.2 -0.1,-0.5 0.5,-0.5c0.6,0.1 1.9,0.9 2.7,2c0.9,1.1 1.8,2 3.4,2c2.487,0 3.82,-0.125 4.622,-0.555c0.934,-1.389 2.227,-2.445 3.578,-2.445v-0.025c-5.668,-0.182 -9.289,-2.066 -10.975,-4.975c-3.665,0.042 -6.856,0.405 -8.677,0.707c-0.058,-0.327 -0.108,-0.656 -0.151,-0.987c1.797,-0.296 4.843,-0.647 8.345,-0.714c-0.112,-0.276 -0.209,-0.559 -0.291,-0.849c-3.511,-0.178 -6.541,-0.039 -8.187,0.097c-0.02,-0.332 -0.047,-0.663 -0.051,-0.999c1.649,-0.135 4.597,-0.27 8.018,-0.111c-0.079,-0.5 -0.13,-1.011 -0.13,-1.543c0,-1.7 0.6,-3.5 1.7,-5c-0.5,-1.7 -1.2,-5.3 0.2,-6.6c2.7,0 4.6,1.3 5.5,2.1c1.699,-0.701 3.599,-1.101 5.699,-1.101c2.1,0 4,0.4 5.6,1.1c0.9,-0.8 2.8,-2.1 5.5,-2.1c1.5,1.4 0.7,5 0.2,6.6c1.1,1.5 1.7,3.2 1.6,5c0,0.484 -0.045,0.951 -0.11,1.409c3.499,-0.172 6.527,-0.034 8.204,0.102c-0.002,0.337 -0.033,0.666 -0.051,0.999c-1.671,-0.138 -4.775,-0.28 -8.359,-0.089c-0.089,0.336 -0.197,0.663 -0.325,0.98c3.546,0.046 6.665,0.389 8.548,0.689c-0.043,0.332 -0.093,0.661 -0.151,0.987c-1.912,-0.306 -5.171,-0.664 -8.879,-0.682c-1.665,2.878 -5.22,4.755 -10.777,4.974v0.031c2.6,0 5,3.9 5,6.6v5.4c0,0.823 0.498,1.53 1.209,1.836c9.161,-3.032 15.791,-11.672 15.791,-21.836c0,-12.682 -10.317,-23 -23,-23c-12.683,0 -23,10.318 -23,23c0,10.164 6.63,18.804 15.791,21.836z"></path></g></g>
+                    </svg>
+    
+                    <p>
+                        Fabio Nogueira
+                    </p>
+            </a>
+            
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
