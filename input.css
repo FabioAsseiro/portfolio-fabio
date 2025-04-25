@@ -4,6 +4,7 @@
 @theme{
     --color-font: #4B88FA;
     --color-Effect: #4b88fab3;
+    --color-fontDark: #202020;
 
     --color-Principal: #4B88FA;
     --color-Secundario: #A8C7FF;
@@ -20,7 +21,7 @@
 
 
 .nav-bar{
-    @apply font-light text-xl cursor-pointer;
+    @apply font-light cursor-pointer;
 }
 
 .icon {
