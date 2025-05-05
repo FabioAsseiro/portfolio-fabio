@@ -1,3 +1,16 @@
+addEventListener("DOMContentLoaded", () => {
+    const html = document.getElementById("html");
+    const theme = html.getAttribute("data-theme");
+
+    if(theme === ""){
+        const icons = document.getElementsByClassName('iconFooter');
+
+        for (let i = 0; i < icons.length; i++) {
+            icons[i].style.fill = "#ffff";
+        }
+    }
+})
+
 function toggleTheme() {
     const html = document.getElementById("html");
     const theme = html.getAttribute("data-theme");
