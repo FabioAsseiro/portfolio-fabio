@@ -3,13 +3,13 @@
 
 @theme{
     --color-font: #4B88FA;
-    --color-Effect: #4b88fab3;
+    --color-Effect: #244b94;
     --color-fontDark: #202020;
 
     --color-Principal: #4B88FA;
     --color-Secundario: #A8C7FF;
     --color-Shadow: #71717B;
-    --color-background: #f2f2f2;
+    --color-background: #f5f5f5;
     --color-EffectDark: #4BFA4Bb3;
     --color-PrincipalDark: #4BFA4B;
     --color-SecundarioDark: #3AA32C;
@@ -35,6 +35,12 @@
     border-radius: 50%;
     animation: blobMove 6s ease-in-out infinite;
     z-index: 0;
+
+    
+}
+
+.teste{
+    color: #244b94;
 }
 
 @keyframes blobMove {
@@ -43,7 +49,7 @@
         border-radius: 40% 40% 60% 60% / 40% 60% 60% 40%;
     }
     25% {
-        transform: translate(30px, -30px) scale(1.1);
+        transform: translate(60px, -30px) scale(1.1);
         border-radius: 50% 60% 60% 50% / 50% 40% 60% 50%;
     }
     50% {
